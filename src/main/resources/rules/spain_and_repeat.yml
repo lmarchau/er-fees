@@ -1,0 +1,7 @@
+name: "spain and repeat"
+description: "fees == 8 when spain and repeat"
+priority: 1
+condition: "relationship.client.countryCode == 'ES' && relationship.freelance.countryCode == 'ES' && (relationship.mission.months > 2 || java.time.LocalDateTime.now().minusMonths(2).isAfter(relationship.firstMission))"
+actions:
+  - "result.setFees(8);"
+  - "result.setRuleName('spain and repeat');"

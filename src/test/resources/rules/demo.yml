@@ -1,0 +1,7 @@
+name: "demo"
+description: "fees == 2 "
+priority: 1
+condition: "relationship != null"
+actions:
+  - "result.setFees(2);"
+  - "result.setRuleName('demo');"

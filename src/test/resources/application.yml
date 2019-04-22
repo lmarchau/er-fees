@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: fees
+
+app:
+  ipstack:
+    api:
+      uri: http://api.ipstack.com
+      key: fea29c3a5cebb3ba38927a6bb3b88ac0
+  fees:
+    default: 10

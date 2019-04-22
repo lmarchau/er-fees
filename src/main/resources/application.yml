@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: fees
+
+  datasource:
+    url: jdbc:hsqldb:file:./appdb
+    username: sa
+
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create
+
+app:
+  ipstack:
+    api:
+      uri: http://api.ipstack.com
+      key: fea29c3a5cebb3ba38927a6bb3b88ac0
+  fees:
+    default: 10
